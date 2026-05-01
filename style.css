@@ -1,0 +1,81 @@
+body {
+    background-color: #000814; /* Pure Deep Night */
+    color: #e0e0e0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.background-watermark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25vw;
+    color: rgba(255, 255, 255, 0.02);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.container {
+    max-width: 800px;
+    padding: 40px;
+    z-index: 1;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+    letter-spacing: 10px;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+    letter-spacing: 4px;
+    font-size: 1.2rem;
+}
+
+p {
+    line-height: 2;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.gateways {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 15px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    border: 1px solid;
+    transition: 0.4s;
+}
+
+.gold { color: #d4af37; border-color: #d4af37; }
+.silver { color: #fff; border-color: #fff; }
+
+.gold:hover { background: #d4af37; color: #000; }
+.silver:hover { background: #fff; color: #000; }
